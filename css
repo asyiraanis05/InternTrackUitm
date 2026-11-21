@@ -1,0 +1,260 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    background: #f5f7fb;
+    color: #172033;
+}
+
+.auth-bg {
+    background: linear-gradient(135deg, #e9efff, #f8faff);
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 950px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+}
+
+.auth-left {
+    background: #172554;
+    color: white;
+    padding: 60px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.auth-left h1 {
+    font-size: 38px;
+    font-weight: 800;
+}
+
+.auth-left h4 {
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.auth-left p {
+    margin-top: 20px;
+    color: #dbeafe;
+}
+
+.auth-right {
+    padding: 45px;
+}
+
+.register-card {
+    max-width: 650px;
+    background: white;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.08);
+}
+
+.form-control,
+.form-select {
+    padding: 11px;
+    border-radius: 9px;
+}
+
+.form-label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.btn-primary {
+    background: #3157c8;
+    border-color: #3157c8;
+    padding: 11px;
+    border-radius: 9px;
+}
+
+.demo-box {
+    background: #f0f4ff;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 13px;
+}
+
+.app-nav {
+    background: #172554;
+}
+
+.app-nav .navbar-brand {
+    color: white;
+    font-weight: bold;
+}
+
+.panel-card,
+.stat-card {
+    background: white;
+    border: 1px solid #e5eaf2;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.stat-card strong {
+    display: block;
+    font-size: 30px;
+}
+
+.table thead th {
+    background: #f0f4ff;
+    font-size: 12px;
+}
+
+.badge-pending {
+    background: #fff0c2;
+    color: #8a6000;
+}
+
+.badge-approved {
+    background: #d9f8e6;
+    color: #167447;
+}
+
+.badge-rejected {
+    background: #ffe0e0;
+    color: #b42318;
+}
+
+
+/* ========================================
+   RESPONSIVE MOBILE DESIGN
+======================================== */
+
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+        font-size: 14px;
+    }
+
+    /* LOGIN AND REGISTER */
+
+    .auth-left {
+        padding: 30px 20px;
+    }
+
+    .auth-left h1 {
+        font-size: 28px;
+    }
+
+    .auth-right,
+    .register-card {
+        padding: 22px;
+        width: 100%;
+    }
+
+    /* NAVIGATION BAR */
+
+    .app-nav {
+        padding: 12px 15px;
+    }
+
+    .app-nav .navbar-brand {
+        font-size: 17px;
+    }
+
+    .navbar-toggler {
+        display: block;
+        border: 1px solid rgba(255,255,255,0.5);
+        padding: 8px 10px;
+        cursor: pointer;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .navbar-collapse {
+        width: 100%;
+        padding-top: 12px;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        gap: 5px;
+    }
+
+    .navbar-nav .nav-link {
+        display: block;
+        padding: 12px 10px;
+        width: 100%;
+    }
+
+    /* DASHBOARD */
+
+    .container,
+    .container-fluid {
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .panel-card,
+    .stat-card {
+        margin-bottom: 15px;
+        padding: 15px;
+    }
+
+    .stat-card strong {
+        font-size: 25px;
+    }
+
+    /* TABLE */
+
+    .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* BUTTON AND FORM */
+
+    button,
+    .btn {
+        min-height: 40px;
+        touch-action: manipulation;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 16px !important;
+        max-width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .auth-left h1 {
+        font-size: 25px;
+    }
+
+    .auth-right,
+    .register-card {
+        padding: 18px;
+    }
+
+    .panel-card,
+    .stat-card {
+        padding: 13px;
+    }
+
+    .app-nav .navbar-brand {
+        font-size: 15px;
+    }
+}
